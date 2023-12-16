@@ -1,59 +1,240 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+
 </script>
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
+<div class="container">
+<div class="profile">
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
+    <div class="logo">
+        <img src="src\lib\images\Personal Logo\logo1-resize.png" alt="">
+    </div>
+    <div class=" intro">
+        <div class="title">
+            <p>Hi everyone, </p> 
+           <p> Welcome To My Portfolio 👋</p>
+        </div>
+    </div>
 
-		to your new<br />SvelteKit app
-	</h1>
+    <div class="item info">
+        <div class="ava">
+            <div class="item ava-img"></div>
+            <div class="name"></div>
+        </div>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+        <div class="score">
 
-	<Counter />
-</section>
+            <div class="item score-item gpa">
+                <div class='score-img'> <img src="src\lib\images\gmail logo.png" alt=""></div>
+                <div class="score-score">3.7/4</div>
+                <div class="score-sub">GPA</div>
+            </div>
+            <div class="item score-item ielts">
+                <div class='score-img'> <img src="src\lib\images\gmail logo.png" alt=""></div>
+                <div class="score-score">3.7/4</div>
+                <div class="score-sub">GPA</div>
+            </div>
+            <div class="item score-item clients">
+                <div class='score-img'> <img src="src\lib\images\gmail logo.png" alt=""></div>
+                <div class="score-score">3.7/4</div>
+                <div class="score-sub">GPA</div>
+            </div>
+            <div class="item score-item years">
+                <div class='score-img'> <img src="src\lib\images\gmail logo.png" alt=""></div>
+                <div class="score-score">3.7/4</div>
+                <div class="score-sub">GPA</div>
+            </div>
+        </div>
+
+        <div class="contact-logos">
+            <div class="contact-text">Contacts</div>
+            <div class="item logos linkedin">
+                <img src="src\lib\images\linkedin logo.png" alt="">
+            </div>
+        
+            <div class="item logos github">
+                <img src="src\lib\images\github logo.png" alt="">
+            </div>
+            
+            <div class="item logos gmail">
+                <img src="src\lib\images\gmail logo.png" alt="">
+            </div>
+        
+            <div class="item logos facebook">
+                <img src="src\lib\images\facebook logo.png" alt="">
+            </div>
+            
+            </div>
+        
+    </div>
+
+</div>
+</div>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
+.container {
+    margin-top: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.logo {
+    justify-self: start;
+    align-self: start;
+}
+.logo img{
+    width: 10vw;
+}
 
-	h1 {
-		width: 100%;
-	}
+.profile {
+    height: 95vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
+.item {
+    display:grid;
+    background-color: #2b2b2b;
+    border-radius: 2vw;
+    border: 1px solid rgb(219, 218, 218);
+}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
+.info {
+    grid-row: 1 / 5;
+    grid-column: 3 / 5;
+    background-color: #E7FE55;
+    margin-right: 6vw;
+    margin-left: 15vw;
+    
+}
+
+.ava {
+    margin-top: 2vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.ava-img {
+    width: 10vw;
+    height: 10vw;
+    min-width: 120px;
+    min-height: 120px;
+}
+
+.score {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 2vw;
+    gap: 1vw;
+}
+
+.score-item {
+    width: 10vw;
+    height: 10vw;
+    min-width: 120px;
+    min-height: 120px;
+    align-self: center;
+    justify-self: center;
+    background-color: #DAF051;
+    border: none;
+    display: grid;
+    grid-template-rows: auto 2vw auto;
+}
+
+.score-img img{
+    width: 20%;
+    
+    margin-left: 2vw;
+    margin-top: 1.5vw;
+}
+
+.score-score {
+    margin-top: -1vw;
+    font-size: 2vw;
+    font-weight: bolder;
+    margin-left: 2vw;
+    color: black;
+}
+
+.score-sub {
+    margin-top: -0.7vw;
+    font-size: 0.9vw;
+    margin-left: 2vw;
+    color: black;
+}
+
+.intro {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+.intro .title {
+    font-size: 3.5vw;
+}
+
+.contact-logos{
+    
+    align-self: end;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    width: auto;
+    margin: 2vw;
+}
+
+.contact-text {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    margin: 1vw;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.logos {
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 1vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.linkedin {
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedin img {
+
+    width:1.7vw;
+}
+
+.github {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.github img {
+    width: 1.2vw;
+}
+.gmail {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.gmail img {
+    width: 1.7vw;
+}
+.facebook {
+    justify-content: center;
+    align-items: center;
+    
+}
+.facebook img {
+    width: 1.7vw;
+}
 </style>
