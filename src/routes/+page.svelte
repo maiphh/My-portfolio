@@ -1,20 +1,30 @@
 <script>
-
+import Counter from "./Counter.svelte";
 </script>
 
 <div class="container">
-<div class="profile">
-
     <div class="logo">
         <img src="src\lib\images\Personal Logo\logo1-resize.png" alt="">
     </div>
-    <div class=" intro">
+<div class="profile">
+
+    
+    <div class=" item intro">
         <div class="title">
             <p>Hi everyone, </p> 
            <p> Welcome To My Portfolio 👋</p>
         </div>
     </div>
+    <div class="desciption item">
+        <p>With a strong academic foundation in modern technologies and programming languages, as well as a good understanding of the IT industry, 
+            I am well-prepared for IT roles. My commitment to staying updated with industry trends through self-learning makes me a valuable candidate.</p>
+    </div>
 
+    <div class="anchors">
+        <div class="item"><p>experience</p></div>
+        <div class="item"><p>project</p></div>
+        <div class="item"><p>skill</p></div>
+    </div>
     <div class="item info">
         <div class="ava">
             <div class="item ava-img"></div>
@@ -71,6 +81,7 @@
 </div>
 
 <style>
+
 .container {
     margin-top: 3vh;
     margin-left: 3vw;
@@ -79,16 +90,17 @@
 .logo {
     justify-self: start;
     align-self: start;
+    margin-bottom: 5px;
 }
 .logo img{
-    width: 10vw;
+    width: 7vw;
 }
 
 .profile {
-    height: 95vh;
+    height: 93vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 15px;
 }
@@ -97,16 +109,15 @@
     display:grid;
     background-color: #2b2b2b;
     border-radius: 2vw;
-    border: 1px solid rgb(219, 218, 218);
+    align-items: center;
+
 }
 
 .info {
     grid-row: 1 / 5;
-    grid-column: 3 / 5;
+    grid-column: 3 / 4;
     background-color: #E7FE55;
-    margin-right: 6vw;
-    margin-left: 15vw;
-    
+    margin-right: 6vw;   
 }
 
 .ava {
@@ -167,12 +178,40 @@
 }
 
 .intro {
-    grid-row: 2/3;
+    grid-row: 1/3;
     grid-column: 1/3;
 }
 .intro .title {
     font-size: 3.5vw;
+    font-weight: bolder;
+    align-self: end;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
 }
+
+.desciption{
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+.desciption p {
+    font-size: 1.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-weight: lighter;
+    align-self: center;
+}
+
+.anchors {
+    grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+.anchors p{
+    margin-left: 2vw;
+}
+
+
 
 .contact-logos{
     
@@ -189,7 +228,7 @@
     grid-column: 1/5;
     margin: 1vw;
     color: black;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 1.2vw;
 }
 
