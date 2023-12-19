@@ -4,7 +4,7 @@
     
     <div class="container">
         <div class="logo">
-            <img src="..\src\lib\images\Personal Logo\logo1-resize.png" alt="">
+            <img src="..\src\lib\images\personal_logo\logo1-resize.png" alt="">
         </div>
     <div class="profile">
     
