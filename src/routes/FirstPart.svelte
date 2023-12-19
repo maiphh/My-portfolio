@@ -4,7 +4,7 @@
     
     <div class="container">
         <div class="logo">
-            <img src="..\src\lib\images\personal_logo\logo1-resize.png" alt="">
+            <img src="\images\personal_logo\logo1-resize.png" alt="">
         </div>
     <div class="profile">
     
@@ -34,22 +34,22 @@
             <div class="score">
     
                 <div class="item score-item gpa">
-                    <div class='score-img'> <img src="..\src\lib\images\gmail logo.png" alt=""></div>
+                    <div class='score-img'> <img src="\images\gmail logo.png" alt=""></div>
                     <div class="score-score">3.7/4</div>
                     <div class="score-sub">GPA</div>
                 </div>
                 <div class="item score-item ielts">
-                    <div class='score-img'> <img src="..\src\lib\images\gmail logo.png" alt=""></div>
+                    <div class='score-img'> <img src="\images\gmail logo.png" alt=""></div>
                     <div class="score-score">3.7/4</div>
                     <div class="score-sub">GPA</div>
                 </div>
                 <div class="item score-item clients">
-                    <div class='score-img'> <img src="..\src\lib\images\gmail logo.png" alt=""></div>
+                    <div class='score-img'> <img src="\images\gmail logo.png" alt=""></div>
                     <div class="score-score">3.7/4</div>
                     <div class="score-sub">GPA</div>
                 </div>
                 <div class="item score-item years">
-                    <div class='score-img'> <img src="..\src\lib\images\gmail logo.png" alt=""></div>
+                    <div class='score-img'> <img src="\images\gmail logo.png" alt=""></div>
                     <div class="score-score">3.7/4</div>
                     <div class="score-sub">GPA</div>
                 </div>
@@ -58,19 +58,19 @@
             <div class="contact-logos">
                 <div class="contact-text">Contacts</div>
                 <div class="item logos linkedin">
-                    <img src="..\src\lib\images\linkedin logo.png" alt="">
+                    <img src="\images\linkedin logo.png" alt="">
                 </div>
             
                 <div class="item logos github">
-                    <img src="..\src\lib\images\github logo.png" alt="">
+                    <img src="\images\github logo.png" alt="">
                 </div>
                 
                 <div class="item logos gmail">
-                    <img src="..\src\lib\images\gmail logo.png" alt="">
+                    <img src="\images\gmail logo.png" alt="">
                 </div>
             
                 <div class="item logos facebook">
-                    <img src="..\src\lib\images\facebook logo.png" alt="">
+                    <img src="\images\facebook logo.png" alt="">
                 </div>
                 
                 </div>
