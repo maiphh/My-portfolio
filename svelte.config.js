@@ -4,7 +4,13 @@ import adapter from '@sveltejs/adapter-vercel';
 const config = {
 	kit: {
 		adapter: adapter(),
-		
+		prerender: {
+            onError: 'continue', // or 'ignore'
+            handleHttpError: (error) => {
+                // Handle 404 errors during prerendering
+                console.error('Prerendering error:', error);
+        	 },
+		},
 	}
 };
 
