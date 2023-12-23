@@ -1,12 +1,11 @@
-// svelte.config.js
 import adapter from '@sveltejs/adapter-vercel';
 
-export default {
-    kit: {
-        // other configurations
-        adapter: adapter(),
-        prerender: {
-            onError: 'continue', // or 'ignore'
-        },
-    },
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	kit: {
+		adapter: adapter(),
+		
+	}
 };
+
+export default config;
