@@ -5,7 +5,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		prerender: {
-            onError: 'continue', // or 'ignore'
+            onError: 'ignore', // or 'ignore'
         },
 	}
 };
