@@ -70,7 +70,7 @@
                 </div>
             
                 <div class="item logos facebook">
-                    <img src="\images\facebook logo.png" alt="">
+                    <img src="..\src\lib\images\facebook logo.png" alt="">
                 </div>
                 
                 </div>
